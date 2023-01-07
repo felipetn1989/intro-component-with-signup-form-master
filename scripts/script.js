@@ -17,5 +17,15 @@ function verify(x) {
       spans[i].style.display = "none";
     }
   }
-}
 
+  let mailformat =
+    /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+  if (inputs[2].value.match(mailformat)) {
+    inputs[2].style.border = "1px solid lightgray";
+    spans[2].style.display = "none";
+  } else {
+    inputs[2].style.border = "1px solid var(--Red)";
+    spans[2].style.display = "block";
+  }
+}

@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/Screenshot%202023-01-07%20at%2014-16-03%20Frontend%20Mentor%20Intro%20component%20with%20sign%20up%20form.png)
 
 ### Links
 
@@ -47,6 +47,8 @@ Users should be able to:
 - Mobile-first workflow
 
 ### What I learned
+
+
 
 ## Author
 
