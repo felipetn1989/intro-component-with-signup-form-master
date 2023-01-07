@@ -147,7 +147,7 @@ form {
   background-color: white;
   color: var(--Grayish-Blue);
   padding: 1.5rem;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   display: grid;
   gap: 1rem;
 }
@@ -158,31 +158,30 @@ input {
 }
 
 input::placeholder {
-    font-weight: bold;
-    font-size: .875rem;
-
+  font-weight: var(--fw-semi-bold);
+  font-size: 0.875rem;
 }
 
 input,
 #claim {
   height: 3.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 #claim {
-    background-color: var(--Green);
-    color: white;
-    text-transform: uppercase;
+  background-color: var(--Green);
+  color: white;
+  text-transform: uppercase;
 }
 
 .small {
-    font-size: .6875rem;
-    padding: 0 1.25rem;
+  font-size: 0.6875rem;
+  padding: 0 1.25rem;
 }
 
 .red {
-    color: var(--Red);
-    font-weight: bold;
+  color: var(--Red);
+  font-weight: bold;
 }
 
 .attribution {
@@ -191,4 +190,38 @@ input,
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    padding: 0;
+    position: absolute;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+  }
+
+  .card__text {
+    text-align: left;
+    padding: 0 8rem;
+    place-self: center;
+  }
+
+  .card__text > h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    padding: 0;
+  }
+
+  .trial {
+    width: 100%;
+    padding-right: 8rem;
+  }
+
+  form {
+    padding: 2.5rem;
+  }
 }
