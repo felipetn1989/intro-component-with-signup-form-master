@@ -27,38 +27,81 @@
         </p>
       </section>
       <div class="trial">
-        <h2>
+        <h2 id="h2">
           <span class="feature">Try it free 7 days</span> then $20/mo.
           thereafter
         </h2>
-        <form action="#" method="post">
+        <form id="form">
           <input
+            class="personal_info"
             type="text"
             name="fname"
             id="ifname"
-            placeholder="     First Name"
+            placeholder="First Name"
+            required
           />
+
+          <span class="errormsg">
+            First Name cannot be empty
+            <img
+              class="error_img"
+              src="images/icon-error.svg"
+              alt="Error icon"
+            />
+          </span>
           <input
+            class="personal_info"
             type="text"
             name="lname"
             id="ilname"
-            placeholder="     Last Name"
+            placeholder="Last Name"
+            required
           />
+          <img class="error_img" src="images/icon-error.svg" alt="Error icon" />
+          <span class="errormsg">
+            Last Name cannot be empty
+            <img
+              class="error_img"
+              src="images/icon-error.svg"
+              alt="Error icon"
+            />
+          </span>
           <input
+            class="personal_info"
             type="email"
             name="fmail"
             id="ifmail"
-            placeholder="     Email Address"
+            placeholder="Email Address"
+            required
           />
+          <span class="errormsg">
+            <img
+              class="error_img"
+              src="images/icon-error.svg"
+              alt="Error icon"
+            />
+            Looks like this is not an email</span
+          >
           <input
+            class="personal_info"
             type="password"
             name="fpass"
             id="ifpass"
-            placeholder="     Password"
+            placeholder="Password"
+            required
           />
+          <span class="errormsg">
+            <img
+              class="error_img"
+              src="images/icon-error.svg"
+              alt="Error icon"
+            />
+            Password cannot be empty
+          </span>
           <button id="claim">Claim your free trial</button>
           <p class="small">
-            By clicking the button, you are agreeing to our <span class="red">Terms and Services</span>
+            By clicking the button, you are agreeing to our
+            <span class="red">Terms and Services</span>
           </p>
         </form>
       </div>
@@ -73,4 +116,5 @@
       </p>
     </footer>
   </body>
+  <script src="scripts/script.js"></script>
 </html>
