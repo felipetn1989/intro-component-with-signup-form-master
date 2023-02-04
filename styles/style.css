@@ -121,6 +121,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4.5rem;
+  margin-top: .5rem;
 }
 
 .card__text > h1 {
@@ -178,6 +179,8 @@ input,
 .small {
   font-size: 0.6875rem;
   padding: 0 1.25rem;
+  line-height: 1.25rem;
+  margin-top: -.5rem;
 }
 
 .red {
